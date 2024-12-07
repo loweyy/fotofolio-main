@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija Slikama</title>
+    <link rel="stylesheet" href="m.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <span id="logo-ikona" class="logo-ikona">
+            <img src="logobijeli.png" alt="Logo Icon" class="logo-image">
+        </span>
+        <div class="navbar-links">
+            <a href="tutorijali.html" class="navbar-link">Tutorijali</a>
+            <a href="blog.html" class="navbar-link">Blog</a>
+        </div>
+        <div class="naslov">Photofolio</div>
+        <div class="icons">
+            <span id="heart-icon" class="heart-icon"><img src="heart.png" alt="Heart Icon" class="heart-image"></span>
+            <span id="profile-icon" class="profile-icon"><img src="userwhite.png" alt="Profile Icon" class="profile-image"></span>
+        </div>
+    </div>
+</header>
+    <div id="image-gallery" class="image-gallery">
+        <!-- dodaj slika koliko hoces-->
+    </div>
+
+    
+    <div id="image-modal" class="modal">
+        <span id="close-modal" class="close-modal">&times;</span>
+        <img id="modal-image" src="" alt="Slika" class="modal-image">
+        <div class="modal-content">
+            <div id="like-section">
+                <button id="like-button">&hearts;</button>
+                <span id="like-count">0</span>
+            </div>
+            <div id="comment-section">
+                <input type="text" id="comment-input" placeholder="Dodaj komentar...">
+                <button id="comment-button">Komentarši</button>
+                <div id="comments-list"></div>
+            </div>
+            <button id="save-to-favorites">Spremi u favorite</button>
+        </div>
+    </div>
+
+    
+    <div id="favorites-modal" class="modal">
+        <span id="close-favorites" class="close-favorites">&times;</span>
+        <h2>Favoriti</h2>
+        <div id="favorites-gallery" class="favorites-gallery"></div>
+    </div>
+
+
+    <div id="profile-modal" class="modal">
+        <span id="close-profile" class="close-profile">&times;</span>
+        <h2>Promijeni profilnu sliku</h2>
+        <input type="file" id="profile-image-input">
+        <br>
+        <button id="change-username-button">Promijeni korisničko ime</button>
+        <input type="text" id="username-input" placeholder="Novo korisničko ime">
+    </div>
+
+    <script src="m.js"></script>
+</body>
+</html>

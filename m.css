@@ -1,0 +1,401 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo-ikona {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);  
+}
+
+.navbar .naslov {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 90px; 
+    color: #ffffff;     
+    font-weight: bold; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #200802, #38040E);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000; 
+    transition: padding 0.3s ease, transform 0.3s ease; 
+}
+
+.navbar.shrink {
+    padding: 2px 30px; 
+   
+}
+
+.navbar .icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.navbar .icons span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar .icons span:hover {
+    color: #290d0b;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+    margin-left: 0px; 
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #ff6f61;
+}
+
+.heart-icon img {
+    width: 35px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-icon img {
+    width: 35px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar .icons span:hover img {
+    transform: scale(1.2); 
+}
+
+
+.image-gallery {
+    display: grid;
+    margin-top: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-item {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+    animation: modalAppear 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes modalAppear {
+    0% {
+        opacity: 0; /* Modal je potpuno nevidljiv */
+        transform: scale(0.8); /* Modal je manji */
+    }
+    100% {
+        opacity: 1; /* Modal postaje potpuno vidljiv */
+        transform: scale(1); /* Modal dolazi u svoju normalnu veličinu */
+    }
+}
+
+.modal-image {
+    width: 80%; 
+    max-width: 600px; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    transition: transform 0.3s ease;
+    animation: imageAppear 0.5s ease forwards;
+}
+@keyframes imageAppear {
+    0% {
+        opacity: 0; /* Slika je potpuno nevidljiva */
+        transform: scale(0.8); /* Slika je manja */
+    }
+    100% {
+        opacity: 1; /* Slika postaje potpuno vidljiva */
+        transform: scale(1); /* Slika raste do normalne veličine */
+    }
+}
+.modal-image:hover {
+    transform: scale(1.05); 
+}
+
+button {
+    background-color: #5e0b0b;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #461c1c;
+    transform: translateY(-2px);
+}
+
+.close-modal {
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #770505;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(194, 0, 0, 0.4); 
+}
+
+
+.close-modal:hover {
+    color: #8f0c0c; 
+    transform: scale(1.2) rotate(90deg); 
+    text-shadow: 0 0 10px rgba(255, 223, 0, 0.8), 0 0 20px rgba(255, 223, 0, 0.6), 0 0 30px rgba(255, 223, 0, 0.4); 
+}
+
+#like-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#like-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#like-button:hover {
+    background-color: darkred;
+}
+
+#like-count {
+    margin-left: 10px;
+    font-size: 18px;
+    color: red;
+}
+
+#comment-section {
+    margin-bottom: 20px;
+}
+
+#comment-input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+#comment-input:focus {
+    border-color: darkred;
+}
+
+#comment-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#comment-button:hover {
+    background-color: darkred;
+}
+
+#comments-list {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+#save-to-favorites {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Glatka animacija za pozadinu */
+}
+
+#save-to-favorites:hover {
+    background-color: darkred; /* Tamnija crvena pri hoveru */
+    animation: glow 1.5s infinite alternate; /* Animacija svetlucanja */
+    opacity: 1; /* Dugme potpuno vidljivo pri hover-u */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px darkred;
+    }
+    50% {
+        box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px darkred;
+    }
+    100% {
+        box-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px darkred;
+    }
+}
+
+#favorites-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#favorites-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#profile-modal input[type="file"] {
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#profile-modal input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+}
+
+
+.heart-icon {
+    color: #ff6f61;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.heart-icon:hover {
+    transform: scale(1.2);
+}
+
+.profile-icon {
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+    transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+    width: 13px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f7f7f7; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4d0a04; 
+    border-radius: 10px; 
+    border: 2px solid #ffffff; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #741108; 
+}
+::-webkit-scrollbar:vertical {
+    background-color: #f7f7f7;
+}
+::-webkit-scrollbar:horizontal {
+    background-color: #f7f7f7; 
+}
