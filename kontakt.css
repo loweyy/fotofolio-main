@@ -1,0 +1,211 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-ikona {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);  
+}
+
+.navbar .naslov {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 90px; 
+    color: #ffffff;     
+    font-weight: bold; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #200802, #38040E);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000; 
+    transition: padding 0.3s ease, transform 0.3s ease; 
+}
+
+.navbar .icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.navbar .icons span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar .icons span:hover {
+    color: #290d0b;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+    margin-left: 0px; 
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #ff6f61;
+}
+
+.heart-icon img {
+    width: 35px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-icon img {
+    width: 35px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar .icons span:hover img {
+    transform: scale(1.2); 
+}
+
+.naslov {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.icons img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b51f1f;
+    padding: 10px;
+}
+
+.naslov {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.icons img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000000;
+}
+
+.contact-info h2, .contact-form h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #9c1919;
+}
+
+.contact-info p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contact-item h3 {
+    color: #9c1919;
+    font-size: 1.2em;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+}
+
+.contact-form {
+    margin-top: 40px;
+    background-color: #9c1919;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #9c1919;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #fff;
+    color: #9c1919;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1d0505;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    animation: fadeIn 0.5s ease-in-out;
+}

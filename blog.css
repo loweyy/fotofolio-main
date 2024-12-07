@@ -1,0 +1,281 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo-ikona {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);  
+}
+
+.navbar .naslov {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 90px; 
+    color: #ffffff;     
+    font-weight: bold; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #200802, #38040E);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000; 
+    transition: padding 0.3s ease, transform 0.3s ease; 
+}
+
+
+.navbar .icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.navbar .icons span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar .icons span:hover {
+    color: #290d0b;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+    margin-left: 0px; 
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #ff6f61;
+}
+
+.heart-icon img {
+    width: 35px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-icon img {
+    width: 35px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar .icons span:hover img {
+    transform: scale(1.2); 
+}
+
+
+.naslov {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.icons img {
+    width: 30px;
+    margin-left: 20px;
+}
+/* General page styling */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b51f1f;
+    padding: 10px;
+}
+
+.naslov {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.icons img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+/* Navigation styling */
+.video-nav {
+    background-color: #9c1919;
+    padding: 15px;
+}
+
+.video-nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.video-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.video-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.video-nav ul li a:hover {
+    color: #ffb3b3;
+}
+
+/* Video Section */
+.video-section {
+    background-color: #b51f1f;
+    padding: 50px 20px;
+}
+
+.video-container {
+    background-color: #9c1919;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.video-player {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-controls {
+    margin-top: 10px;
+}
+
+.video-controls button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.video-controls button:hover {
+    background-color: #ff1a1a;
+}
+
+.video-controls input[type="range"] {
+    margin-top: 10px;
+}
+
+.news-container {
+    background-color: #9c1919;
+    padding: 40px 20px; /* Increased padding for more space around content */
+    border-radius: 15px; /* Slightly larger border-radius for softer edges */
+    text-align: left; /* Align text to the left for a more readable layout */
+    margin-top: 40px; /* Added more margin for spacing between sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-between; /* Use space-between to balance the image and text */
+    align-items: center;
+    flex-wrap: wrap; /* Allow content to wrap in case of smaller screens */
+    gap: 30px; /* Added gap for spacing between image and text */
+}
+
+.news-image {
+    width: 700px; /* Increased image width for a larger image */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.news-text {
+    max-width: 650px; /* Increased width for more room for text */
+    color: #fff;
+    line-height: 1.8; /* Increased line-height for better readability */
+}
+
+.news-text h3 {
+    font-size: 1.6em; /* Slightly larger heading */
+    margin-bottom: 15px; /* Space between heading and paragraph */
+    color: #ffdbdb; /* Lighter color for headings */
+    font-weight: bold;
+}
+
+.news-text p {
+    font-size: 1.2em; /* Increased font size for better readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.news-text strong {
+    font-size: 1.6em; /* Increased size for stronger emphasis */
+    font-weight: bold;
+    color: #ffb3b3; /* Lighter color for emphasis */
+}
+
+.news-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover for interactivity */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+@media (max-width: 768px) {
+    .news-content {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        align-items: center; /* Center align on mobile */
+    }
+
+    .news-image {
+        width: 90%; /* Make image smaller on mobile */
+    }
+
+    .news-text {
+        max-width: 90%; /* Allow text to take up more space */
+    }
+}
+
+/* Animation for video containers */
+.video-container, .news-container {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

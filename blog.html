@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija Slikama</title>
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <span id="logo-ikona" class="logo-ikona">
+                <img src="logobijeli.png" alt="Logo Icon" class="logo-image">
+            </span>
+            <div class="naslov">Photofolio</div>
+            <div class="icons">
+                <span id="heart-icon" class="heart-icon"><img src="heart.png" alt="Heart Icon" class="heart-image"></span>
+                <span id="profile-icon" class="profile-icon"><img src="userwhite.png" alt="Profile Icon" class="profile-image"></span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="video-nav">
+        <ul>
+            <li><a href="#video1">Tutorijal za slikanje</a></li>
+            <li><a href="#video2">Tutorijal za snimanje</a></li>
+            <li><a href="#novosti">Novosti</a></li>
+        </ul>
+    </nav>
+
+    <section id="videos" class="video-section">
+        <div class="video-container" id="video1">
+            <h2>Tutorijal za slikanje</h2>
+            <video id="tutorial1" class="video-player" loop muted>
+                <source src="PHOTOGRAPHY BASICS in 10 MINUTES.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button onclick="togglePlay('tutorial1')">Play/Pause</button>
+                <button onclick="toggleMute('tutorial1')">Mute/Unmute</button>
+                <input type="range" id="volume1" onchange="changeVolume('tutorial1', this.value)" min="0" max="1" step="0.01" />
+            </div>
+        </div>
+
+        <div class="video-container" id="video2">
+            <h2>Tutorijal za snimanje</h2>
+            <video id="tutorial2" class="video-player" loop muted>
+                <source src="10 Mobile Videography Tips For Beginners.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button onclick="togglePlay('tutorial2')">Play/Pause</button>
+                <button onclick="toggleMute('tutorial2')">Mute/Unmute</button>
+                <input type="range" id="volume2" onchange="changeVolume('tutorial2', this.value)" min="0" max="1" step="0.01" />
+            </div>
+        </div>
+
+        <div class="news-container" id="novosti">
+            <h2>Novosti</h2>
+            <div class="news-content">
+                <img src="product-photographer-with-camera-studio.jpg" alt="Novosti Image" class="news-image">
+                <div class="news-text">
+                    <p><strong>Evolucija Fotoaparata: Od DSLR-a do Mirrorless Kamere</strong></p>
+                    <p>Jedan od najvažnijih trendova u svijetu fotografije u posljednjih nekoliko godina je prijelaz s DSLR fotoaparata na mirrorless kamere. Mirrorless kamere nude brojne prednosti, uključujući manju veličinu, bržu autofokus tehnologiju i bolje performanse u slabim uvjetima osvjetljenja. Kamere poput Sony Alpha serije i Canon EOS R serije postale su favorit među profesionalcima i amaterima zbog svoje svestranosti i kvaliteta slike.
+
+                        Zašto su mirrorless kamere popularne?
+                        
+                        Manja i lakša od DSLR-a.
+                        Brži autofokus, idealno za akcijske snimke.
+                        Veći kvalitet slike pri slabom svjetlu.
+                        Mogućnost promjene objektiva za još veću kreativnost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="blog.js"></script>
+</body>
+</html>

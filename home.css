@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo-ikona {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);  
+}
+
+.navbar .naslov {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 90px; 
+    color: #ffffff;     
+    font-weight: bold; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #200802, #38040E);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000; 
+    transition: padding 0.3s ease, transform 0.3s ease; 
+}
+
+
+.navbar .icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.navbar .icons span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar .icons span:hover {
+    color: #290d0b;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+    margin-left: 0px; 
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #ff6f61;
+}
+
+.heart-icon img {
+    width: 35px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-icon img {
+    width: 35px;  
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar .icons span:hover img {
+    transform: scale(1.2); 
+}
+
+
+.home-sectioon {
+    margin-top: 0;
+    padding: 0;
+}
+
+.custom-video {
+    width: 100%;
+    height: auto;
+}
+
+
+#home {
+    background-color: #4b0e0e;
+    color: white; 
+    padding: 20px;
+}
+
+.home-section video {
+    width: 100%;
+    height: auto;
+}
+
+
+.section-title {
+    font-size: 2em;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.image-item {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-link:hover .image-item {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+
