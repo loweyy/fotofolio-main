@@ -1,0 +1,38 @@
+// Prvo definišemo slike sa kategorijama
+const images = [
+    { src: 'nature1.jpg', category: 'nature' },
+    { src: 'nature2.jpg', category: 'nature' },
+    { src: 'animal1.jpg', category: 'animals' },
+    { src: 'animal2.jpg', category: 'animals' },
+    { src: 'architecture1.jpg', category: 'architecture' },
+    { src: 'architecture2.jpg', category: 'architecture' },
+];
+
+// Funkcija za prikaz slika u galeriji
+function displayImages(category) {
+    const imageGallery = document.getElementById('imageGallery');
+    imageGallery.innerHTML = '';  // Očistite trenutne slike u galeriji
+
+    // Filtriramo slike na osnovu izabrane kategorije
+    const filteredImages = category === 'all' ? images : images.filter(image => image.category === category);
+
+    // Prikazujemo slike
+    filteredImages.forEach(image => {
+        const imgElement = document.createElement('img');
+        imgElement.src = image.src;
+        imgElement.alt = image.category;
+        imgElement.classList.add('image');
+        imageGallery.appendChild(imgElement);
+    });
+}
+
+// Funkcija koja se poziva kada se promeni selektovana kategorija
+document.getElementById('categorySelect').addEventListener('change', (event) => {
+    const selectedCategory = event.target.value;
+    displayImages(selectedCategory);
+});
+
+// Prikazivanje svih slika pri učitavanju stranice
+document.addEventListener('DOMContentLoaded', () => {
+    displayImages('all');
+});
